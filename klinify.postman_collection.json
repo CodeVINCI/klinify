@@ -1,0 +1,417 @@
+{
+	"info": {
+		"_postman_id": "9944d179-3ecb-471a-b660-2dc105bf5e6e",
+		"name": "klinify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/customer/?n=3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAzODM1MjA1LCJqdGkiOiI3ZTc5ZjIwMmI1ZTk0MDVjYTMzMzk2ZjZjOTAzZjkyMCIsInVzZXJfaWQiOjF9._77bltYakOUTrdOp6h6SxLeRcbP4MZcaGZGvDMzjJr8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/customer/?n=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						""
+					],
+					"query": [
+						{
+							"key": "n",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/customer/?n=1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAzODM1MjA1LCJqdGkiOiI3ZTc5ZjIwMmI1ZTk0MDVjYTMzMzk2ZjZjOTAzZjkyMCIsInVzZXJfaWQiOjF9._77bltYakOUTrdOp6h6SxLeRcbP4MZcaGZGvDMzjJr8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/customer/?n=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						""
+					],
+					"query": [
+						{
+							"key": "n",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/customer/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAzODM1MjA1LCJqdGkiOiI3ZTc5ZjIwMmI1ZTk0MDVjYTMzMzk2ZjZjOTAzZjkyMCIsInVzZXJfaWQiOjF9._77bltYakOUTrdOp6h6SxLeRcbP4MZcaGZGvDMzjJr8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "abhi",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Abhishek Chauhan",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "1996-06-17",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/customer/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/customer/abhi/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAzODM1MjA1LCJqdGkiOiI3ZTc5ZjIwMmI1ZTk0MDVjYTMzMzk2ZjZjOTAzZjkyMCIsInVzZXJfaWQiOjF9._77bltYakOUTrdOp6h6SxLeRcbP4MZcaGZGvDMzjJr8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/customer/abhi/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"abhi",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/customer/abhi/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAzODM1MjA1LCJqdGkiOiI3ZTc5ZjIwMmI1ZTk0MDVjYTMzMzk2ZjZjOTAzZjkyMCIsInVzZXJfaWQiOjF9._77bltYakOUTrdOp6h6SxLeRcbP4MZcaGZGvDMzjJr8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/customer/abhi/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"abhi",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/customer/abhi/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAzODM1MjA1LCJqdGkiOiI3ZTc5ZjIwMmI1ZTk0MDVjYTMzMzk2ZjZjOTAzZjkyMCIsInVzZXJfaWQiOjF9._77bltYakOUTrdOp6h6SxLeRcbP4MZcaGZGvDMzjJr8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Abhishek Kumar Chauhan",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "abhi",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "1996-06-17",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/customer/abhi/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"abhi",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/customer/abhi/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAzODM1MjA1LCJqdGkiOiI3ZTc5ZjIwMmI1ZTk0MDVjYTMzMzk2ZjZjOTAzZjkyMCIsInVzZXJfaWQiOjF9._77bltYakOUTrdOp6h6SxLeRcbP4MZcaGZGvDMzjJr8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Abhishek Chauhan",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "abhi",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "1996-06-17",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/customer/abhi/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"abhi",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/register/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "abh",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "password2",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "myc.abhi96@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/register/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "\nhttp://localhost:8000/getauthtoken/\n",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "abhishek",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/getauthtoken/\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"getauthtoken",
+						"\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/refreshauthtoken/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "refresh",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYwMzkyMTMwNSwianRpIjoiZDk5NmMwYmJjMGE4NDU5ZGIxYzA3ZjhkNzRhYTQ3MmYiLCJ1c2VyX2lkIjoxfQ.pH_7nF3VD02KlYnf4SqV9CrAEJXJ_qGVUiuRGohfFj0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/refreshauthtoken/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"refreshauthtoken",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
